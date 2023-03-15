@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div class="container" style="text-align: center;">
+	<div class="jumbotron">
+		<h1>Add new movies here</h1>
+
+	</div>
+	
+	
+<form class="form-horizontal" style="text-align: center;" [formGroup]= "createMovieForm">
+	<div class="form-group"><label></label><input type="text" formControlName="movieName" placeholder="name"></div>
+	<div class="form-group"><label></label><input type="text" formControlName="img" placeholder="img"></div>
+	<div class="form-group"><label></label><input type="text" formControlName="director" placeholder="director"></div>
+	<div class="form-group"><label>Summary:</label><textarea rows="10" cols="50" formControlName="summary"></textarea></div>
+	<div class="form-group"><label></label><input type="text" formControlName="release" placeholder="release"></div>
+	<div class="form-group"><label></label><input type="text" formControlName="duration" placeholder="duration"></div>
+	<div class="form-group"><label></label><input type="text" formControlName="ratings" placeholder="ratings"></div>
+	<div class="form-group"><label></label><button (click)="onSubmit()" class="btn btn-large btn-primary" >Submit</button></div>
+</form>
+</div>

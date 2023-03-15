@@ -1,0 +1,47 @@
+<div *ngIf = "currentMovie"  class="top-container">
+    <div class="row  text-center movie-heading">
+        <div class="col-12">
+          {{currentMovie.movieName}}
+        </div>
+     </div>
+  
+      <div class="row text-placing">
+        <div class="col-2">
+          Rating : {{currentMovie.rating}} ⭐
+        </div>
+  
+        <div class="col-2">
+          Duration: {{currentMovie.duration}} hr
+        </div>
+  
+        <div class="col-2">
+          Genre: {{currentMovie.genre}}
+        </div>
+  
+        <div class="col-6 pl-3">
+          Date: {{currentDate | date: "dd:MMM:yyyy"}}
+        </div>
+  
+      </div>
+  
+  
+  
+  </div>
+  
+  
+  <!-- <h1 class="col-12 container py-3 text-danger"><strong>Theatres</strong></h1> -->
+  
+  
+  <div class="col-12 container my-4">
+      <table class="col-12">
+          <tr *ngFor="let theatre of theatres" class="border-bottom">
+            <td class="theatreName"><strong>{{theatre.theatreName}}</strong></td>
+            <td><a [routerLink] = "[theatre.theatreId]" [queryParams]="{timing:theatre.timing}" class="text-decoration-none timing">{{theatre.timing}} Pm</a></td>
+          </tr>
+      </table>
+  
+  </div>
+  
+  <!-- <router-outlet></router-outlet> -->
+  
+  

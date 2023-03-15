@@ -1,0 +1,45 @@
+<app-header></app-header>
+
+<div class="container">
+	<div class="row">
+	<div class="col-lg-12">
+		<div class="jumbotron">
+			<h1>Welcome to BookMyMovie page</h1>
+			<div>
+				<h2>We provide fastest and easiest movie booking</h2>
+
+			</div>
+		</div>
+
+	</div>
+
+	
+	<div class="back" >
+				
+			<div class="col-md-4" *ngFor="let movie of movies">
+				<div class="thumbnail" >
+			
+					<img class = "rounded imgagesproperty"  src={{movie.img}} alt="Image">
+					<div class="caption">
+
+						<h5 class="card-title">{{movie.movieName}}</h5>
+						
+						<a class="btn btn-primary" (click) ="moreinfo(movie.id)">More Info</a>
+						<button class="btn btn-success" >Book Now</button>
+					</div>
+			
+			
+				
+				</div>
+			</div>
+      
+		</div>
+	</div>
+</div>
+
+<app-footer></app-footer>
+
+
+
+
+

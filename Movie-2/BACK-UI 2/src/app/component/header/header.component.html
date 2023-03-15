@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+
+<html>
+     <head>
+          <title>BookMyMovie</title>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+          <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+          <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+          <style>
+               input[type="text"]{
+                    margin-top: 5px;
+                    height: 40px;
+                    margin-left: 20px;
+                    width: 250px;
+                    padding: 6px 10px;
+                    font-size: 20px;
+                    background-color: #313035;
+                    
+               }
+          </style>
+     </head>
+     <body>
+
+  <nav class="navbar navbar-inverse" >
+    <div class="container-fluid">    
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-left navbar-nav">
+                         <li><a class="navbar-brand" routerLink="/dashboard">BookMyMovie</a></li>                    
+               </ul>
+                    <ul class="nav navbar-right navbar-nav">               
+                    <li><a routerLink="/dashboard">Welcome {{fullname}} <span ></span></a></li>                                                                    
+                  </ul>  
+          </div>
+    </div>          
+  </nav>
+  <nav class="navbar navbar-inverse" style="margin-top: -25px; border: 0px;">
+    <div class="container-fluid">
+         <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-left navbar-nav">
+                        <li><a class="navbar-brand" href="/"><i class="icomoon icon-film"></i></a></li>
+                   <li> <a routerLink="/dashboard">Book Movies</a></li>
+              </ul>
+                   <ul class="nav navbar-right navbar-nav">        
+                   <li><a routerLink="/dashboard">Screening Movies <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                   <li><a routerLink="/dashboard">Manage Movies <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                   <li><a routerLink="/dashboard">Manage Screens<span class="glyphicon glyphicon-leaf"></span></a></li>
+                   <li><a routerLink="/dashboard" (click)="logout()">Logout</a></li>   
+                 </ul>  
+              </div>
+         </div>
+  </nav>

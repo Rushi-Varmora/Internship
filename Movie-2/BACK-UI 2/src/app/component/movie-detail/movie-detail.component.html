@@ -1,0 +1,72 @@
+<app-header></app-header>
+<div class="card">
+    
+    <div  class="card-body" >
+        <div class="row movie-container">
+            <div class="col-md-1"></div>
+  
+            <div class="col-md-3">
+                <img class="rounded imgagesproperty" src={{movie.img}} alt="Movie Poster"  />
+            </div>
+  
+            <div class="col-md-5">
+                <div class="row">
+                  <h1 class="font-weight-bold">{{movie.movieName }} </h1>
+            </div>
+  
+            <div class="col-md-1"></div>
+                <table>
+  
+  
+                  <tr>
+                    <td>Director </td>
+                    <td>: {{movie.director}}</td>
+                  </tr>
+  
+                  
+  
+                  <tr>
+                    <td>Rating</td>
+                    <td>: {{movie.ratings}} ⭐</td>
+                  </tr>
+  
+                  
+                  <tr>
+                    <td>Release</td>
+                    <td>: {{movie.release}}</td>
+                  </tr>
+
+                  <tr>
+                    <td>Duration</td>
+                    <td>: {{movie.duration}} hr</td>
+                  </tr>
+
+                  <tr>
+                    <td>Summary</td>
+                    <td>: {{movie.summary}}</td>
+                  </tr>
+  
+                  
+  
+                </table>
+  
+                 <a class="btn btn-primary mt-4 book-ticket-button" [routerLink] ="['theatres']">Book Tickets</a>
+                
+                 <table>
+                    <br>
+                    <tr >
+                        <td colspan="2" class="about-margin"><h4><b>Reviews</b></h4></td>
+                    </tr>
+                 </table>
+            </div>
+
+          </div>
+  
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-outline-secondary" style="width:80px" >
+            <i class="fa fa-chevron-left"></i>Back
+        </button>
+    </div>
+  </div>
+<app-footer></app-footer>
